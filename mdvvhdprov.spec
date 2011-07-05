@@ -23,6 +23,7 @@ BuildRequires:	bash
 BuildRequires:	asciidoc
 BuildRequires:  xsltproc
 BuildRequires:  docbook-style-xsl
+BuildRequires:	docbook-dtd45-xml
 BuildRequires:  libqt4-devel
 BuildRequires:	python-qt4-devel
 BuildArch:      noarch 
@@ -46,7 +47,7 @@ the format you like (VDI, QCOW, etc.).
 #pyuic4 ui_mdvvhdprovgui.ui >ui_mdvvhdprovgui.py
 
 # Generate manpage
-a2x -v -d manpage -f manpage mdvvhdprov.1.txt
+a2x -d manpage -f manpage mdvvhdprov.1.txt
 
 %install
 %{__mkdir_p} %{buildroot}%{_bindir}
