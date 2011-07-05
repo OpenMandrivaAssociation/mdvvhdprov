@@ -46,7 +46,7 @@ the format you like (VDI, QCOW, etc.).
 #pyuic4 ui_mdvvhdprovgui.ui >ui_mdvvhdprovgui.py
 
 # Generate manpage
-a2x -d manpage -f manpage mdvvhdprov.1.txt
+a2x -v -d manpage -f manpage mdvvhdprov.1.txt
 
 %install
 %{__mkdir_p} %{buildroot}%{_bindir}
