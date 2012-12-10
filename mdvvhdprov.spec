@@ -120,3 +120,13 @@ GUI for mdvvhdprov
 /usr/bin/%{guiname}
 /etc/security/console.apps/%{guiname}
 /etc/pam.d/%{guiname}
+
+
+%changelog
+* Tue Jul 05 2011 Alexandre Lissy <alissy@mandriva.com> 2.0-1
++ Revision: 688739
+- Adding BuildRequires against docbook-dtd45-xml
+- Verbose call to a2x
+- Initial import of mdvvhdprov
+- Created package structure for mdvvhdprov.
+
