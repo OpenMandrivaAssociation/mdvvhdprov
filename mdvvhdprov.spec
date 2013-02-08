@@ -4,7 +4,7 @@
 %define guiname mdvvhdprovgui
 %define version	2.0
 %define subrel	0
-%define release 1
+%define release 2
 %define mdvvhddir %{_prefix}/lib/%{name}
 
 Summary:	MDVVHDProv - A tool for Virtual Hard Drives Provisinning
@@ -30,12 +30,12 @@ BuildArch:      noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
-MDVVHDProv is a tool intented for provisionning Virtual Hard Drive with Mandriva.
-It includes mdvbootstrap.sh, which takes care of installing a minimal yet running
-system, in a similar manner as debootstrap.
+MDVVHDProv is a tool intented for provisionning Virtual Hard Drive with
+Mandriva. It includes mdvbootstrap.sh, which takes care of installing a minimal
+yet running system, in a similar manner as debootstrap.
 
-Currently, Virtual Hard Drive are plain old sparse file, which can be converted in
-the format you like (VDI, QCOW, etc.).
+Currently, Virtual Hard Drive are plain old sparse file, which can be converted
+in the format you like (VDI, QCOW, etc.).
 
 %prep
 %setup -q -n %{name}-%{version}
