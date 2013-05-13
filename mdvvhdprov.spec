@@ -4,7 +4,7 @@
 %define guiname mdvvhdprovgui
 %define version	2.0
 %define subrel	0
-%define release 2
+%define release  3
 %define mdvvhddir %{_prefix}/lib/%{name}
 
 Summary:	MDVVHDProv - A tool for Virtual Hard Drives Provisinning
@@ -27,7 +27,6 @@ BuildRequires:	docbook-dtd45-xml
 BuildRequires:  pkgconfig(Qt3Support)
 BuildRequires:	python-qt4-devel
 BuildArch:      noarch 
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 MDVVHDProv is a tool intented for provisionning Virtual Hard Drive with
