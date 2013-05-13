@@ -24,7 +24,7 @@ BuildRequires:	asciidoc
 BuildRequires:  xsltproc
 BuildRequires:  docbook-style-xsl
 BuildRequires:	docbook-dtd45-xml
-BuildRequires:  libqt4-devel
+BuildRequires:  pkgconfig(Qt3Support)
 BuildRequires:	python-qt4-devel
 BuildArch:      noarch 
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
