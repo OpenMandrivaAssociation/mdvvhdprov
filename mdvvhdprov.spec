@@ -7,7 +7,7 @@
 %define release  3
 %define mdvvhddir %{_prefix}/lib/%{name}
 
-Summary:	MDVVHDProv - A tool for Virtual Hard Drives Provisinning
+Summary:	- A tool for Virtual Hard Drives Provisinning
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
