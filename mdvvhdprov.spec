@@ -1,16 +1,13 @@
 # $Id: mdvvhdprov.spec 273059 2011-07-05 08:13:27Z alissy $
 
-%define name	mdvvhdprov
 %define guiname mdvvhdprovgui
-%define version	2.0
 %define subrel	0
-%define release  3
 %define mdvvhddir %{_prefix}/lib/%{name}
 
-Summary:	- A tool for Virtual Hard Drives Provisinning
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Summary:	A tool for Virtual Hard Drives Provisinning
+Name:		mdvvhdprov
+Version:	2.0
+Release:	4
 License:	GPLv2
 Group:		System/Servers
 URL:		http://svn.mandriva.com/svn/soft/lab/%{name}/
@@ -81,7 +78,6 @@ ln -s %{_sysconfdir}/pam.d/mandriva-simple-auth %{buildroot}%{_sysconfdir}/pam.d
 %{__install} -Dp -m0644 mdvvhdprov.1 %{buildroot}%{_mandir}/man1/mdvvhdprov.1
 
 %clean
-rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,0755)
@@ -103,7 +99,6 @@ Requires:   python-sip >= 4.9
 GUI for mdvvhdprov
 
 %files -n %{guiname}
-%defattr(-,root,root)
 %dir /usr
 %dir /usr/sbin
 %dir /usr/share/apps
