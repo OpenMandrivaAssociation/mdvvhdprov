@@ -99,13 +99,7 @@ Requires:   python-sip >= 4.9
 GUI for mdvvhdprov
 
 %files -n %{guiname}
-%dir /usr
-%dir /usr/sbin
-%dir /usr/share/apps
 %dir /usr/share/apps/mdvvhdprovgui
-%dir /etc/pam.d
-%dir /etc/security
-%dir /etc/security/console.apps
 /usr/share/apps/%{guiname}/mdvvhdprovgui.py
 /usr/share/apps/%{guiname}/ui_mdvvhdprovgui.py
 /usr/share/apps/%{guiname}/ui_about.py
