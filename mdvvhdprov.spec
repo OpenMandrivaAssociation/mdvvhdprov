@@ -10,7 +10,7 @@ Version:	2.0
 Release:	4
 License:	GPLv2
 Group:		System/Servers
-URL:		http://svn.mandriva.com/svn/soft/lab/%{name}/
+URL:		https://svn.mandriva.com/svn/soft/lab/%{name}/
 Source0:	%{name}-%{version}.tar.gz
 Requires:	urpmi
 Requires:       bash
